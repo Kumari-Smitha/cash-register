@@ -1,3 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Inline+One:ital@1&family=Montserrat&family=Rubik+Marker+Hatch&display=swap');
+
+:root{
+    --primary-color : #7C3AED; 
+}
 body{
-    background-color: aqua;
+    background-color: #99f6e4;
+}
+
+h1{
+    color: var(--primary-color);
+    /* font-weight: 800; */
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+    font-family: 'Montserrat', sans-serif;
+    margin: auto;
+    text-align: center;
+    margin-top: 2.3rem;
+}  
+
+.description{
+    font-size: larger;
+}
+
+label{
+    margin-bottom: 1rem;
+}
+
+input{
+    width: 20vw;
+    margin: auto;
+    height: 2rem;
+    border: 3px solid var(--primary-color);
+    border-radius: 0.5rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+button{
+    width: 8vw;
+    height: 2.5rem;
+    margin: auto;
+    background-color: var(--primary-color);
+    color: white;
+    border: 2px solid var(--primary-color);
+    border-radius: 0.5rem;
+    font-size: large;
+    cursor: pointer;
+}
+
+#message{
+    color: red;
+    font-size: large;
+}
+
+table{
+    margin: auto;
+    margin-top: 2rem;
+    padding: 2px;
+    width: 50%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    border-collapse: collapse;
+    
+}
+.table-body>tr,th,td{
+    
+    border: 3px solid var(--primary-color);
+    padding: 8px;
+}
+
+caption{
+    margin: auto;
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: larger;
 }
