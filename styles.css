@@ -9,7 +9,7 @@ body{
 
 h1{
     color: var(--primary-color);
-    /* font-weight: 800; */
+    font-weight: bolder;
 }
 .container{
     display: flex;
@@ -18,11 +18,14 @@ h1{
     font-family: 'Montserrat', sans-serif;
     margin: auto;
     text-align: center;
-    margin-top: 2.3rem;
+    margin-top: 0;
+    margin-bottom: 1rem;
 }  
 
 .description{
     font-size: larger;
+    margin-top: 0;
+    font-weight: bold;
 }
 
 label{
@@ -49,16 +52,18 @@ button{
     border-radius: 0.5rem;
     font-size: large;
     cursor: pointer;
+    
 }
 
 #message{
     color: red;
     font-size: large;
+    font-weight: bold;
 }
 
 table{
     margin: auto;
-    margin-top: 2rem;
+    /* margin-top: 2rem; */
     padding: 2px;
     width: 50%;
     text-align: center;
@@ -79,3 +84,42 @@ caption{
     margin-bottom: 1rem;
     font-size: larger;
 }
+
+.footer{
+    position: fixed;
+    width: 94vw;
+    height: 2.7rem;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    border: 3px solid ;
+    box-shadow: 5px 10px;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    background-color: #085e4d;
+    
+}
+
+.footerText{
+    color: white;
+    font-weight: bold;
+    /* padding-left: 3rem; */
+    /* padding-top: 0.5rem; */
+    
+}
+
+ul{
+    list-style-type: none;
+    display: flex;
+    margin-top: 0.5rem;
+}
+
+img{
+    height: 2rem;
+    width: 2rem;
+    margin-right: 0.5rem;
+    
+    
+}
+

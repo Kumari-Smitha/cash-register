@@ -24,16 +24,22 @@ billAmount.addEventListener("input", showEle)
 
 
 const validateBill = ()=>{
-    errorMessage.style.display = "none"
-    if(billAmount.value > 0){
-        if(cashGiven.value >= billAmount.value){
-            const amountReturn = cashGiven.value - billAmount.value;
-            calculateChange(amountReturn);
+    errorMessage.style.display = "none";
+
+    if(cashGiven.value !== ""){
+    
+        if(billAmount.value > 0){
+            if(cashGiven.value >= billAmount.value){
+                const amountReturn = cashGiven.value - billAmount.value;
+                calculateChange(amountReturn);
+            } else {
+                showMessage("Give cash greater than or equal to bill amount.")
+            }
         } else {
-            showMessage("Give cash greater than or equal to bill amount.")
+            showMessage("The Bill amount should be greater than 0.");
         }
     } else {
-        showMessage("The Bill amount should be greater than 0.");
+        showMessage("Enter both the values!");
     }
 }
 
